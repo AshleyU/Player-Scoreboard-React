@@ -44,10 +44,10 @@ const players = [
   const Counter = (props) => {
     return(
       <div className="counter">
-         <button className="counter-action decrement"> - </button>
-         <span className="counter-score">{props.score}</span>
-         <button className="counter-action increment"> + </button>
-       </div>
+        <button className="counter-action decrement"> - </button>
+        <span className="counter-score">{props.score}</span>
+        <button className="counter-action increment"> + </button>
+      </div>
     );
   }
   
@@ -58,7 +58,7 @@ const players = [
         <Header 
           title="Scoreboard" 
           totalPlayers={props.initialPlayers.length}
-         />
+        />
       
       {/*Players list*/}
       {props.initialPlayers.map( player =>
@@ -67,7 +67,7 @@ const players = [
           score={player.score}
           key={player.id.toString()}
         />
-       )}
+      )}
       </div>
     );
   }
